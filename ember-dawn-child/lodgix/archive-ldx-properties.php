@@ -35,6 +35,8 @@ $postCount = array(
 
 <?php block_template_part('header'); ?>
 
+<main class="wp-block-group">
+
 <h1 class="ldx-sr-only"><?php the_archive_title(); ?></h1>
 
 <div id="ldx-outter-main" class="<?php echo esc_html(ldx_public_class()); ?>">
@@ -72,6 +74,8 @@ $postCount = array(
     <?php do_action( 'ldx-after-loop-content' ); ?>
 
 </div>
+
+</main>
 
 <?php block_template_part('footer'); ?>
 
